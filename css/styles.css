@@ -1,0 +1,247 @@
+/* Created by ElevenCore */
+/* v1.0, February 2018 */
+
+/* Main 'Fixes' - Creating the CSS Base */
+
+/* Fix all the margin/padding Settings of HTML/CSS default values */
+html, body, div{
+    padding:                0px;
+    margin:                 0px;
+}
+
+/* Container for the whole Website */
+div.webcontainer {
+    background-color:       black;
+    width:                  100%;
+    height:                 100%;
+    padding:                inherit;
+    margin:                 inherit;
+    transition:             0.2s;
+}
+
+/* Image Part, Z-Indexed picture */
+div.topcontainer {
+    background-image:       url("../image/bg.png");
+    width:                  100%;
+    height:                 510px;
+    padding:                inherit;
+    margin:                 inherit;
+    position:               relative;
+}
+
+/* Upper Navigation Left */
+div.topnavleft {
+    width:                  30%;
+    padding:                inherit;
+    margin:                 inherit;
+    float:                  left;
+}
+
+div.midnavleft {
+    width:                  40%;
+    padding:                inherit;
+    margin:                 inherit;
+    float:                  left;
+}
+/* Navigation Right */
+div.topnavright {
+    width:                  70%;
+    height:                 130px;
+    padding:                inherit;
+    margin:                 inherit;
+    float:                  right;
+}
+
+div.midnavright {
+    width:                  60%;
+    height:                 130px;
+    padding:                inherit;
+    margin:                 inherit;
+    float:                  right;
+    text-align:             center;
+}
+
+div.topnavleft, div.topnavright{
+    height:                 130px;
+    background:             linear-gradient(black, black, rgba(0,0,0,0));
+}
+
+div.midnavleft, div.midnavright {
+    height:                 150px;
+    background:             linear-gradient(black, black, rgba(0,0,0,0));
+    
+}
+
+
+/* Mid Navigation trdansition */
+div.midnavtransition {
+    background:             linear-gradient(rgba(0,0,0,0.01),rgba(0,0,0,0.5), black);
+    width:                  100%;
+    height:                 60px;
+    margin:                 inherit;
+    z-index:                1;
+    position:               absolute;
+    bottom:                 0;
+}
+
+/* Content */
+div.contentdiv {
+    background-image:       url(../image/tbg.png);
+    width:                  100%;
+    height:                 500px;
+    padding:                inherit;
+    margin:                 inherit;
+}
+
+/* Blend Transparency on contentdiv*/
+div.blend {
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+div.footer {
+    width:                  100%;
+    padding:                inherit;
+    margin:                 inherit;
+    height:                 0px;
+    position:               absolute;
+    bottom:                 60px;
+
+}
+
+/* Footer Navigation Left */
+div.bottomnavleft {
+    background:             linear-gradient(rgba(0,0,0,0), black, black);
+    width:                  30%;
+    height:                 120px;
+    float:                  left;
+}
+
+/* Footer Navigation Right */
+div.bottomnavright {
+    background:             linear-gradient(rgba(0,0,0,0), black, black);
+    width:                  70%;
+    height:                 120px;
+    float:                  right;
+}
+
+/* Footer Wrap */
+div.bottomtextholder {
+    padding-top:            60px;
+}
+
+div.scarlogo {
+    width:                  210px;
+    height:                 210px;
+    background-image:       url(../image/bs1.png);
+    background-size:        210px;
+    margin:                 0;
+    padding:                0;
+    
+}
+div.scarlogoscarred {
+    width:                  210px;
+    height:                 210px;
+    content:                url(../image/bs1_scr.png); 
+    opacity:                0;
+    transition:             all 0.3s;
+}
+div.scarlogoscarred:hover {
+    opacity:                1;
+
+}
+
+
+/* Mid Navigation */
+/* colors: incative-615F62; active-ECAB0D */ 
+
+/*
+-- Triangle: -- 
+
+div.topnavleft::before {
+     dropdown top triangle 
+    content: '';
+    position: absolute;
+    bottom: 90%;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 25px 0 25px;
+    border-color: #ff8c00 transparent transparent transparent;
+    z-index: 1;
+  }*/
+
+
+
+/* Define fonts */ 
+@font-face {
+    font-family:            spanish;
+    src:                    url(../font/old_spanish.ttf);   
+}
+
+/* Style fonts for specific usages */
+
+/* Font in the right Navigation */
+.navrightfont {
+    font-family:            spanish;
+    color:                  lightgray;
+    font-size:              17;
+    text-decoration:        none;
+    float:                  right;
+    padding-right:          30px;
+    line-height:            55px;
+}
+
+.navmidrightfont {
+    font-family:            spanish;
+    color:                  lightgray;
+    font-size:              25;
+    text-decoration:        none;
+    float:                  center;
+    padding-right:          10%;
+    line-height:            70px;
+}
+
+/* Font in the right Navigation+Hover */
+.navrightfont:hover {
+    color:                  white;
+    font-size:              17px;
+    -webkit-transition:     0.2s;
+    -moz-transition:        0.2s;
+    -o-transition:          0.2s;
+    transition:             0.2s;
+}
+
+/* Font in the left Navigation */
+.navleftfont {
+    font-family:            spanish;
+    color:                  lightgray;
+    font-size:              25px;
+    text-decoration:        none;
+    line-height:            60px;
+    padding-left:           30px;
+}
+
+/* Font in the left Navigation+Hover */
+.navleftfont:hover {
+    color:                  white;
+    font-size:              26px;
+    -webkit-transition:     0.2s;
+    -moz-transition:        0.2s;
+    -o-transition:          0.2s;
+    transition:             0.2s;
+}
+
+/* Font used for the title in the middle of the Top Background-Image*/
+.titlefont {
+    font-family:            spanish;
+    color:                  white;
+    font-size:              60px;
+    text-align:             center;
+    line-height:            200px;
+}
