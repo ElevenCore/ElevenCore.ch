@@ -24,7 +24,7 @@
                 
                 <!-- Centered Information -->
                 <div class="titlediv">
-                    <p class="titlefont">Bloody Scarlet</p>
+                    <p class="titlefont">Bloody Scarlet </p>
                 </div>
                 <div class="midnavtransition">
                     <div class="scarlogo">
