@@ -3,6 +3,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
         <script src="js/jquery-3.3.1.min.js"></script>
+
     </head>
     <body>
         <!-- Container for the whole Website -->
@@ -23,7 +24,7 @@
                 
                 <!-- Centered Information -->
                 <div class="titlediv">
-                    <p class="titlefont">Bloody</p>
+                    <p class="titlefont">Bloody Scarlet</p>
                 </div>
                 <div class="midnavtransition">
                     <div class="scarlogo">
